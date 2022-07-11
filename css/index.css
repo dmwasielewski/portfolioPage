@@ -20,18 +20,26 @@
 
     --clr-transition: #f97c67;
     --clr-click: #9bc546;
+
+    --clr-1: #e63946;
+    --clr-2: #f1faee;
+    --clr-3: #a8dadc;
+    --clr-4: #457b9d;
+    --clr-5: #1d3557;
 }
 
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: black; */
 }
 
 /* navbar */
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     background: var(--clr-bcg);
 }
 
@@ -47,19 +55,35 @@ html {
 .navbar__logoLink {
     font-size: 2rem;
     font-weight: 700;
-    color: #9bc546;
+    color: #f1faee;
 }
 
 .navbar__item {
     display: inline-block;
+    position: relative;
     list-style: none;
+}
+
+.navbar__item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #f1faee;
+    transition: all 0.5s ease;
+}
+
+.navbar__item:hover::after {
+    width: 100%;
 }
 
 .navbar__link {
     margin: 2rem;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #5ed2b7;
+    color: #f1faee;
 }
 
 /* home */

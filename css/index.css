@@ -7,9 +7,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
+:root {
+    --clr-bcg: #e63946;
+    --clr-bcg2: #efffef;
+    --clr-btn: #5ed2b7;
+
+    --clr-text: #f1faee;
+    --clr-subText: #5f669c;
+
+    --clr-transition: #f97c67;
+    --clr-click: #9bc546;
+}
+
+html {
+    font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,8 +31,63 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    background: yellow;
+    padding: 1rem 0;
+    background: var(--clr-bcg);
 }
 
-.navbar__logo {
+.maxWidth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 6rem;
+}
+
+.navbar__logoLink {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9bc546;
+}
+
+.navbar__item {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar__link {
+    margin: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #5ed2b7;
+}
+
+/* home */
+.home {
+    display: flex;
+    height: 100vh;
+    min-height: 50rem;
+    min-width: 80rem;
+    color: #e63946;
+}
+
+.home__content {
+    margin: auto 40rem auto 0;
+}
+
+.home__contentText1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home__contentText2 {
+    margin-left: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home__contentText3 {
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }

@@ -32,7 +32,7 @@ html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-    /* background-color: black; */
+    background-color: black;
 }
 
 /* navbar */
@@ -40,7 +40,6 @@ html {
     position: fixed;
     width: 100%;
     padding: 1.5rem 0;
-    background: var(--clr-bcg);
 }
 
 .maxWidth {
@@ -56,6 +55,10 @@ html {
     font-size: 2rem;
     font-weight: 700;
     color: #f1faee;
+}
+
+.navbar__span {
+    color: var(--clr-bcg);
 }
 
 .navbar__item {
@@ -84,6 +87,13 @@ html {
     font-size: 1.6rem;
     font-weight: 500;
     color: #f1faee;
+}
+
+p {
+    font-size: 20px;
+}
+.navSticky {
+    background: var(--clr-bcg);
 }
 
 /* home */
